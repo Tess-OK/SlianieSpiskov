@@ -1,0 +1,35 @@
+﻿<Window x:Class="Zd_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Zd_1"
+        mc:Ignorable="d"
+        Title="ХЗ"
+        Height="450"
+        Width="250">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/1618433508_34-funart_pro-p-oboi-fon-krasivii-zadnii-fon-34.jpg" />
+        </Grid.Background>
+        <StackPanel Width="200">
+
+            <StackPanel>
+                <TextBlock Text="Введите числа через запятую:"
+                           Foreground="White" />
+                <TextBox x:Name="num1" />
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Введите числа через запятую:"
+                           Foreground="White" />
+                <TextBox x:Name="num2" />
+            </StackPanel>
+
+            <ListView x:Name="list">
+
+            </ListView>
+            <Button Content="Отправить"
+                    Click="Btn_Click" />
+        </StackPanel>
+    </Grid>
+</Window>
